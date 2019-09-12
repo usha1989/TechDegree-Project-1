@@ -94,7 +94,7 @@ document.getElementById('quote-box').innerHTML = message;
   comment.
 ***/
 
-//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.

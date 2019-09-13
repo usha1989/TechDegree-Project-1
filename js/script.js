@@ -97,7 +97,7 @@ function random_bg_color() {
    
     }
 
-
+//Set time interval for two functions every 2 secs and that randomly chnages both the quote and the background color.
 setInterval(printQuote,2000);
 setInterval(random_bg_color,2000);
 

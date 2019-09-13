@@ -9,31 +9,31 @@ var quotes = [ {
         source: "socrates",
         citation: "Google",
         year: 1689,
-        tags: "humour"},
+        tags: "life"},
         {
         quote: "Whereof one cannot speak, thereof one must be silent",
         source: "Ludwig Wittgenstein",
         citation: "Google",
         year: 1770,
-        tags: "humour"},
+        tags: "life"},
         {
         quote: "The life of man (in a state of nature) is solitary, poor, nasty, brutish, and short",
         source: "Thomas Hobbes",
         citation: "Google",
         year: 1570,
-        tags: ""},
+        tags: "philosophy"},
         {
         quote: "He who thinks great thoughts, often makes great errors",
         source: "Martin Heidegger",
         citation: "Google",
         year: 1470,
-        tags: ""  },
+        tags: "philosophy"  },
         {
-        quote: "We live in the best of all possible worlds",
-        source: "Gottfried Wilhelm Leibniz",
-        citation: "Google",
+        quote: "Let us not seek the Republican answer or the Democratic answer, but the right answer. Let us not seek to fix the blame for the past. Let us accept our own responsibility for the future.",
+        source: "John F. Kennedy",
+        citation: "brainyQuote",
         year: 1470,
-        tags: ""   }];
+        tags: "politics"   }];
         
 
 
@@ -73,6 +73,9 @@ function printQuote() {
         
         message += '<span class="year">'+ textQuote.year + '</span>';
     }
+    if(textQuote.tags){
+       message += '<span class="tags">'+ textQuote.tags + '</span>';
+       }
     
     message += '</p>';
     

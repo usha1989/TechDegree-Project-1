@@ -93,11 +93,13 @@ function random_bg_color() {
     var z = Math.floor(Math.random() * 256);
     var bgColor = "rgb(" + x + "," + y + "," + z + ")";
     document.body.style.background = bgColor;
-     document.button.style.background = bgColor;
+    document.getElementById('loadQuote').onclick = bgColor;
+   
     }
 
 
-
+setInterval(printQuote,2000);
+setInterval(random_bg_color,2000);
 
 
 /***

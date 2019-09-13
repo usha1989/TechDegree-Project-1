@@ -93,8 +93,8 @@ function random_bg_color() {
     var z = Math.floor(Math.random() * 256);
     var bgColor = "rgb(" + x + "," + y + "," + z + ")";
     document.body.style.background = bgColor;
-    document.getElementById('loadQuote').onclick = bgColor;
-   
+   document.getElementById('loadQuote').onclick = bgColor;
+  
     }
 
 //Set time interval for two functions every 2 secs and that randomly chnages both the quote and the background color.

@@ -29,7 +29,7 @@ var quotes = [ {
         year: 1470,
         tags: "philosophy"  },
         {
-        quote: "Let us not seek the Republican answer or the Democratic answer, but the right answer. Let us not seek to fix the blame for the past. Let us accept our own responsibility for the future.",
+        quote: " Let us accept our own responsibility for the future.",
         source: "John F. Kennedy",
         citation: "brainyQuote",
         year: 1470,
@@ -73,7 +73,6 @@ function printQuote() {
         
         message += '<span class="year">'+ textQuote.year + '</span>';
     }
-    if(textQuote.tags){
     if(textQuote.tags == "humour"||textQuote.tags == "life"|| textQuote.tags == "philosophy"||textQuote.tags == "politics") {
        message += '<span class="tags">'+ " "+ textQuote.tags + '</span>';
        }

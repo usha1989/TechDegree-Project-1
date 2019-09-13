@@ -74,7 +74,8 @@ function printQuote() {
         message += '<span class="year">'+ textQuote.year + '</span>';
     }
     if(textQuote.tags){
-       message += '<span class="tags">'+ textQuote.tags + '</span>';
+    if(textQuote.tags == "humour"||textQuote.tags == "life"|| textQuote.tags == "philosophy"||textQuote.tags == "politics") {
+       message += '<span class="tags">'+ " "+ textQuote.tags + '</span>';
        }
     
     message += '</p>';

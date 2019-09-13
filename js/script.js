@@ -113,3 +113,4 @@ document.getElementById('loadQuote').addEventListener('click', random_bg_color, 
 
 
 
+

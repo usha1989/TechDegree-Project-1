@@ -46,12 +46,14 @@ randomNumber = Math.floor(Math.random() * quotes.length);
     
     return quotes[randomNumber];
 }
-console.log(getRandomQuote(quotes));
+
 
 /***
 Call the randomQuote function and assign it to a variable.
-Create a printQuote Function to build the html quote string.
+Create a printQuote Function to build the HTML quote string.
 Add conditional statements to check for year and citation property and add them to the string.Set the innerHTML of the div to the string and return the new random string every time the function is called. 
+
+Extra credit:create conditional to check for tags and add them to the HTML string
 ***/
 
 var message = "";
@@ -84,6 +86,16 @@ function printQuote() {
     return message;
 }
  
+//Extra credit : Function which creates a random color code and assigns the color to the background css property.
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+     document.button.style.background = bgColor;
+    }
+
 
 
 
@@ -91,9 +103,11 @@ function printQuote() {
 /***
   
   When the button is clicked the print quote function is triggered and generates a random quote.
+  When the button is clicked the random color function is triggered and generates a random quote.
 ***/
 
 document.getElementById('loadQuote').addEventListener('click', printQuote, false);
+document.getElementById('loadQuote').addEventListener('click', random_bg_color, false);
 
 
 

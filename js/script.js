@@ -62,7 +62,7 @@ function printQuote() {
     
     var textQuote = getRandomQuote(quotes);
     
-    message = '<p class="quote">' + textQuote.quote;
+    message = '<p class="quote">' + textQuote.quote + '</p>';
     
     message += '<p class="source">' + textQuote.source;
     
